@@ -22,7 +22,7 @@
         }
     ],
     "support": {
-        "source": "https://github.com/Label305/soapsource"
+        "source": "https://github.com/Label305-Forks/soapsource"
     },
     "require": {
         "php": ">=5.3",
