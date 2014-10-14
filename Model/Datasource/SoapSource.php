@@ -288,10 +288,6 @@ class SoapSource extends DataSource {
         }
 
         $this->log($this->getRequest(), 'soap');
-        $this->log($this->getResponse(), 'soap');
-        $this->log($this->getResponseHeaders(), 'soap');
-        $this->log($this->getHttpResponseHeaders(), 'soap');
-        $this->log('---------------------', 'soap');
 
         if($this->errors) {                                    
             return false;   
