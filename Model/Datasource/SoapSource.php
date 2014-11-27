@@ -287,7 +287,9 @@ class SoapSource extends DataSource {
             $this->errors = $fault->faultstring;
         }
 
-        $this->log($this->getRequest(), 'soap');
+        if(Configure::read('Soap.log.requests')){
+            $this->log($this->getRequest(), 'soap');
+        }
 
         if($this->errors) {                                    
             return false;   
